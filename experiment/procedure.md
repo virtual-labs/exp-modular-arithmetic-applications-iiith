@@ -1,85 +1,145 @@
 ### Procedure
 
-Welcome to the fascinating world of modular arithmetic and its applications in cryptography! In this experiment, you'll explore how mathematical concepts that might seem abstract at first are actually the foundation of modern digital security. Get ready to become a cryptography detective!
+Welcome to the RSA Cryptosystem simulation! This interactive experiment will guide you through the complete process of implementing the RSA encryption algorithm step by step. You will take on the role of a cryptography agent working to send secure messages using mathematical principles of modular arithmetic.
 
-#### Step 1: Understanding the Basics - Prime Number Selection
+#### Mission Overview
 
-1. **Prime Number Generation**: 
-   - Start the simulation by clicking the "Generate Prime Numbers" button
-   - The system will display two prime numbers (p and q) - these are your building blocks!
-   - **Fun Fact**: Prime numbers are like the atoms of mathematics - they can't be broken down further by multiplication!
-   - Observe how the system checks for primality using trial division
-   - Try generating different sets of prime numbers and notice their randomness
+The simulation presents an RSA adventure where you must help Professor Cipher send a secret message to Agent Q using the RSA cryptosystem. The interface includes a progress bar showing your advancement through 8 distinct stages of the RSA process.
 
-2. **Calculate n = p × q**:
-   - Click "Calculate n" to compute the product of your two primes
-   - This value 'n' becomes part of both your public and private keys
-   - **Important**: Record the values of p, q, and n in the provided table
+#### Stage 1: Prime Number Selection (Finding the Magic Stones)
 
-#### Step 2: Euler's Totient Function - The Heart of RSA
+1. **Start the Mission**: 
+   - Click the "Start Mission" button to begin the RSA simulation
+   - The interface will present you with a selection of prime numbers displayed as circular buttons
 
-3. **Understanding φ(n)**:
-   - Click "Calculate Totient Function" to compute φ(n) = (p-1) × (q-1)
-   - **Fun Fact**: Euler's totient function counts how many numbers less than n are coprime to n!
-   - Watch the visualization show which numbers are coprime to n
-   - This function is crucial for generating secure keys
+2. **Select Two Different Prime Numbers**:
+   - You will see prime numbers: 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47
+   - Click on your first prime number (p) - it will appear in the first selection box
+   - Click on a different prime number for your second choice (q) - it will appear in the second selection box
+   - **Important**: You cannot select the same prime number twice
+   - **Fun Fact**: Prime numbers are fundamental building blocks in cryptography because they have exactly two factors: 1 and themselves
 
-#### Step 3: Key Generation - Creating Your Cryptographic Identity
+3. **Confirm Your Selection**:
+   - Once both primes are selected, the "Next" button will become active
+   - Click "Next" to proceed with your chosen prime numbers p and q
 
-4. **Select Public Exponent (e)**:
-   - Choose a value for 'e' from the dropdown menu (commonly 3, 17, or 65537)
-   - **Requirement**: e must be coprime to φ(n), meaning gcd(e, φ(n)) = 1
-   - The system will verify this condition and highlight valid choices
-   - **Fun Fact**: 65537 is popular because it's a Fermat prime (2^16 + 1)!
+#### Stage 2: Building the Cryptographic Foundation (Build the Magic Lock)
 
-5. **Calculate Private Exponent (d)**:
-   - Click "Find Private Key" to compute d, where e × d ≡ 1 (mod φ(n))
-   - Watch the Extended Euclidean Algorithm visualization find the modular inverse
-   - **Important**: This is your secret key - in real life, never share this!
-   - The system will show step-by-step how d is calculated
+4. **Calculate n (RSA Modulus)**:
+   - The simulation will display your selected primes p and q
+   - Calculate n = p × q using mental math or a calculator
+   - Enter your calculated value in the input field labeled "n = p × q = "
 
-#### Step 4: The Magic of Encryption - Securing Your Message
+5. **Calculate φ(n) (Euler's Totient Function)**:
+   - Calculate φ(n) = (p-1) × (q-1) 
+   - Enter your calculated value in the input field labeled "φ(n) = (p-1) × (q-1) = "
+   - **Fun Fact**: Euler's totient function φ(n) counts the positive integers up to n that are relatively prime to n
 
-6. **Message Input**:
-   - Enter a simple message (numbers only for this simulation)
-   - Ensure your message value is less than n for proper encryption
-   - **Tip**: Start with small numbers like 42 or 123 to see clear patterns
+6. **Verify Your Calculations**:
+   - Click the "Check" button to verify both calculations
+   - If incorrect, error messages will guide you to the correct answers
+   - Both values must be correct to proceed to the next stage
 
-7. **Encryption Process**:
-   - Click "Encrypt Message" to apply the formula: C = M^e mod n
-   - Watch the modular exponentiation animation
-   - **Fun Fact**: The message is raised to the power of e, but we only keep the remainder when divided by n!
-   - Observe how even small changes in the message create completely different ciphertext
+#### Stage 3: Public Key Selection (Choose the Public Key)
 
-#### Step 5: The Art of Decryption - Revealing the Secret
+7. **Understanding the Public Exponent**:
+   - The simulation will present you with several candidate values for the public exponent e
+   - These options include both valid choices (coprime to φ(n)) and invalid decoys
 
-8. **Decryption Process**:
-   - Click "Decrypt Message" to apply: M = C^d mod n
-   - Marvel at how the original message magically reappears!
-   - **Mathematical Beauty**: This works because of Euler's theorem: M^(φ(n)) ≡ 1 (mod n)
+8. **Select a Valid Public Exponent (e)**:
+   - Click on one of the presented numbers to select it as your public exponent
+   - **Mathematical Requirement**: The chosen e must satisfy gcd(e, φ(n)) = 1
+   - Your selection will be validated automatically
 
-#### Step 6: Interactive Exploration and Analysis
+9. **Confirm Your Choice**:
+   - If your selection is valid (coprime to φ(n)), you can proceed
+   - If invalid, an error message will appear: "This key doesn't fit the lock! (Not coprime with φ(n))"
+   - Select a different value until you find a valid public exponent
+   - Click "Next" once a valid e is selected
 
-9. **Parameter Experimentation**:
-   - Try different prime numbers and observe how it affects key generation
-   - Experiment with different values of 'e' and see the impact on 'd'
-   - **Challenge**: Can you predict what happens with larger primes?
+#### Stage 4: Private Key Generation (Forge the Secret Key)
 
-10. **Security Analysis**:
-    - Use the "Factor n" button to see how difficult it is to break the encryption
-    - **Fun Fact**: With small primes, factoring is easy, but with large primes (hundreds of digits), it would take longer than the age of the universe!
-    - Compare encryption/decryption times with different key sizes
+10. **Calculate the Private Exponent (d)**:
+    - You must find d such that e × d ≡ 1 (mod φ(n))
+    - This means d is the modular multiplicative inverse of e modulo φ(n)
+    - Enter your calculated value for d in the input field
 
-#### Step 7: Real-World Connection
+11. **Use the Hint System** (if needed):
+    - Click "Show Hint" to reveal the step-by-step Extended Euclidean Algorithm calculation
+    - The hint shows the complete process of finding the modular inverse
+    - **Fun Fact**: The Extended Euclidean Algorithm not only finds the greatest common divisor but also the coefficients that express it as a linear combination
 
-11. **Practical Applications**:
-    - Click "Show Applications" to see where RSA is used in everyday life
-    - **Examples**: HTTPS websites, email encryption, digital signatures
-    - **Mind-Blowing Fact**: Every time you see that little lock icon in your browser, mathematics similar to what you just performed is protecting your data!
+12. **Verify the Private Key**:
+    - Click "Check" to validate your calculated d value
+    - The system will confirm if d is the correct modular inverse
+    - You must enter the exact correct value to proceed
 
-#### Verification and Recording
+#### Stage 5: Message Encryption (Lock the Message)
 
-12. **Document Your Results**:
-    - Complete the observation table with all calculated values
-    - Verify that decryption produces the original message
-    - **Double-Check**: Ensure that e × d ≡ 1 (mod φ(n)) using the verification tool
+13. **Enter Your Secret Message**:
+    - Input a numerical message in the text field
+    - **Constraint**: Your message must be a positive integer less than n
+    - The simulation will validate that your input meets this requirement
+
+14. **Perform Encryption**:
+    - Click "Lock Message" to encrypt your message using the formula: C = M^e mod n
+    - The system performs modular exponentiation to compute the ciphertext
+    - **Fun Fact**: Modular exponentiation is computed efficiently using the square-and-multiply algorithm to handle large numbers
+
+15. **Observe the Result**:
+    - The encrypted ciphertext will be displayed
+    - Note how the encryption transforms your original message into a seemingly random number
+
+#### Stage 6: Message Transmission (Send the Secret Box)
+
+16. **Review the Key Information**:
+    - The simulation displays the public parameters: n, e (which can be shared)
+    - The private key d is also shown (but in reality, this would be kept secret)
+    - This stage represents the transmission of the encrypted message
+
+17. **Proceed to Decryption**:
+    - Click "Open the Box" to move to the decryption phase
+    - This simulates Agent Q receiving the encrypted message
+
+#### Stage 7: Interactive Decryption (Decrypt the Message)
+
+18. **Step-by-Step Decryption Process**:
+    - The simulation guides you through the modular exponentiation for decryption: M = C^d mod n
+    - You will work through each bit of the exponent d in binary representation
+    - For each bit, you will perform the following calculations:
+
+19. **Binary Exponentiation Steps**:
+    - **If the current bit is 1**: Calculate (result × base) mod n
+    - **If the current bit is 0**: Keep the result unchanged
+    - **Always**: Calculate new base = (base × base) mod n for the next iteration
+
+20. **Interactive Calculation**:
+    - Enter your calculated values when prompted
+    - The system will verify each step before proceeding
+    - Error messages will guide you if calculations are incorrect
+    - Continue until all bits of the exponent have been processed
+
+#### Stage 8: Mission Completion (Success)
+
+21. **Verify the Decryption**:
+    - The final result should match your original message
+    - The simulation will display both the original message and the decrypted result
+    - **Mathematical Verification**: The process demonstrates that (M^e)^d ≡ M (mod n)
+
+22. **Review the Complete Process**:
+    - The simulation provides a summary of all calculation steps
+    - Detailed explanations show how modular exponentiation reversed the encryption
+    - **Fun Fact**: The RSA algorithm's security relies on the computational difficulty of factoring large composite numbers
+
+#### Completion and Analysis
+
+23. **Mission Accomplished**:
+    - The simulation confirms successful message transmission and decryption
+    - You have demonstrated the complete RSA cryptosystem workflow
+    - Click "Play Again" to experiment with different parameters
+
+24. **Key Learning Outcomes**:
+    - Understanding the role of prime numbers in cryptographic security
+    - Practical application of modular arithmetic and Euler's totient function
+    - Experience with modular exponentiation algorithms
+    - Appreciation for the mathematical foundations of modern digital security
