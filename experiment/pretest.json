@@ -129,12 +129,12 @@
         "d": "Cannot determine without knowing d"
       },
       "explanations": {
-        "a": "This is correct! First, we need to find d. Since n = 35 = 5×7, φ(n) = 4×6 = 24. We need d such that 5×d ≡ 1 (mod 24). Since 5×5 = 25 ≡ 1 (mod 24), d = 5. To decrypt: m = c^d mod n = 12^5 mod 35. Using successive squaring: 12^2 = 144 ≡ 4 (mod 35), 12^4 ≡ 16 (mod 35), 12^5 = 12^4 × 12 ≡ 16×12 = 192 ≡ 17 (mod 35). Wait, let me recalculate: 12^5 mod 35 = 2.",
-        "b": "This is incorrect based on the calculation above. The correct decryption gives m = 2.",
+        "a": "This is incorrect. The calculation shows that 12^5 mod 35 = 17, not 2.",
+        "b": "This is correct! First, we need to find d. Since n = 35 = 5×7, φ(n) = 4×6 = 24. We need d such that 5×d ≡ 1 (mod 24). Since 5×5 = 25 ≡ 1 (mod 24), d = 5. To decrypt: m = c^d mod n = 12^5 mod 35. Calculating: 12^2 = 144 ≡ 4 (mod 35), 12^4 ≡ 16 (mod 35), 12^5 = 12^4 × 12 ≡ 16 × 12 = 192 ≡ 17 (mod 35). We can verify: 17^5 mod 35 = 12.",
         "c": "This is incorrect. This value doesn't result from the proper decryption calculation.",
         "d": "This is incorrect. We can determine d from the given information: since n = 35 = 5×7, φ(n) = 24, and with e = 5, we get d = 5."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "advanced"
     },
     {

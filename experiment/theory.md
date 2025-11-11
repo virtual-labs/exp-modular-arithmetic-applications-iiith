@@ -140,17 +140,27 @@ If `e` and `d` are chosen such that:
 (e × d) ≡ 1 (mod φ(n))
 ```
 
-then for a message `m` that is coprime to `n`, it holds that:
+then for any message `m` where `0 < m < n`, it holds that:
 
 ```
 (m^e)^d ≡ m (mod n)
 ```
 
-This follows from **Euler's theorem**, which states that:
+**Why RSA works:**
+
+When `gcd(m, n) = 1` (i.e., `m` is coprime to `n`), this follows from **Euler's theorem**, which states:
 
 ```
 m^φ(n) ≡ 1 (mod n)     if gcd(m, n) = 1
 ```
+
+Since `e × d ≡ 1 (mod φ(n))`, we can write `e × d = 1 + k × φ(n)` for some integer `k`. Therefore:
+
+```
+m^(e×d) = m^(1 + k×φ(n)) = m × (m^φ(n))^k ≡ m × 1^k ≡ m (mod n)
+```
+
+**Note:** The coprimality condition `gcd(m, n) = 1` is not strictly required for RSA to work correctly. Even when `m` shares a factor with `n` (which is extremely rare for large primes), the Chinese Remainder Theorem ensures that decryption still recovers the original message. However, for the mathematical proof using Euler's theorem, we typically assume `gcd(m, n) = 1`.
 
 ---
 
