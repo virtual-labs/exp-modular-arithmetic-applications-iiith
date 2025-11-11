@@ -1,0 +1,4 @@
+- Implement a simplified RSA-like system to explore encryption and decryption using modular arithmetic.
+- Understand the role of prime numbers, Euler’s totient function, and modular inverses in cryptographic key generation.
+- Practice modular exponentiation and inverse computation using interactive visualization tools.
+- Demonstrate the real-world application of number theory concepts in securing digital communication.

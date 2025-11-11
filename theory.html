@@ -1,0 +1,577 @@
+<!DOCTYPE html><html lang="en"><head>
+      <!--Google Tag Manager-->
+      <script class="gtm">
+        var dataLayer = [{
+        'labName': 'Virtual Lab',
+        'discipline': 'Test',
+        'college': 'IIITH',
+        'phase': 'Testing',
+        'expName': 'MODULAR ARITHMETIC AND APPLICATIONS',
+        'expShortName': 'modular-arithmetic-applications'
+        }];
+    
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5NMQ9NQ');
+      </script>
+      <!--End Google Tag Manager-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    
+    	<meta name="experiment-short-name" content="modular-arithmetic-applications">
+    	<meta name="developer-institute" content="IIITH">
+    	<meta name="learning-unit" content="MODULAR ARITHMETIC AND APPLICATIONS">
+    	<meta name="task-name" content="Theory">
+    
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css">
+    <link rel="stylesheet" href="./assets/css/toast.css">
+    <link rel="stylesheet" href="./assets/katex_assets/katex.min.css">
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+      <!--Google Tag Manager (noscript)-->
+      <noscript class="gtm">
+        <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5NMQ9NQ" style="display:none;visibility:hidden" width="0">
+        </iframe>
+      </noscript>
+      <!--End Google Tag Manager (noscript)-->
+  
+      <header class="vlabs-header sticky-top bg-white">
+        <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+          
+          <button class="navbar-toggler px-4" type="button" onclick="toggle()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="d-flex justify-content-center">        
+            <a href="https://vlab.co.in" class="navbar-brand">
+              <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+            </a>
+          </div>
+          
+          <div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center justify-content-end">
+            <div class="svc-rating-display">
+                <rating-display spreadsheetid="1x12nhpp0QvnsA6x-O1sV4IA9SAbfVsq_wiexWkutOmU" sheetname="Experiment-Database" columnname="Experiment Short Name" columnvalue="modular-arithmetic-applications" imagesdirectory="/plugins/svc-rating/images/">
+                </rating-display>
+            </div>      <div class="svc-rating-submit">
+                <rating-submit title="Rate" this="" experiment="">
+                </rating-submit>
+            </div>      <bug-report id="bug-report" title="[BUG REPORT] MODULAR ARITHMETIC AND APPLICATIONS" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;IIITH&quot;,&quot;expname&quot;:&quot;MODULAR ARITHMETIC AND APPLICATIONS&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" button_style="border: none; color: #fff; background-color: #288ec8; text-align: center; font-size: 1.05rem; border-radius: 1em;padding: 0.6em 1.2em; margin: 0 10px" position="override" custom_button_class="v-button"></bug-report>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+        <div class="row d-flex justify-content-between">
+          <div class="flex-column">
+          <div class="row py-4 px-4 breadcrumbs">
+          	<div class="title is-4 tools">Tools</div>
+          	<span class="mx-2">
+          		<i aria-hidden="true" class="fa fa-angle-right"></i>
+          	</span>
+          	<a href="performance-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Performance Tool</button>
+          	</a>
+          	<a href="validator-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Validation Tool</button>
+          	</a>
+          </div>
+          </div>
+        </div>
+        <div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+          <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              <a href="https://vlab.co.in" class="navbar-brand">
+                                  <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+                              </a>
+                          </h5>
+                          <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu">
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="index.html" class="p-2 ">
+                                      Aim
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="theory.html" class="p-2  current-item ">
+                                      Theory
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="pretest.html" class="p-2 ">
+                                      Pretest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="procedure.html" class="p-2 ">
+                                      Procedure
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="simulation.html" class="p-2 ">
+                                      Simulation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="posttest.html" class="p-2 ">
+                                      Posttest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="references.html" class="p-2 ">
+                                      References
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="contributors.html" class="p-2 ">
+                                      Contributors
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="feedback.html" class="p-2 ">
+                                      Feedback
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="index.html" class="p-2 ">
+                        Aim
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="theory.html" class="p-2  current-item ">
+                        Theory
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="pretest.html" class="p-2 ">
+                        Pretest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="procedure.html" class="p-2 ">
+                        Procedure
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="simulation.html" class="p-2 ">
+                        Simulation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="posttest.html" class="p-2 ">
+                        Posttest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="references.html" class="p-2 ">
+                        References
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="contributors.html" class="p-2 ">
+                        Contributors
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="feedback.html" class="p-2 ">
+                        Feedback
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+          </div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+            <div class="text-center fix-spacing">
+              <h2 id="modular-arithmetic-and-applications">Modular Arithmetic and Applications</h2>
+          
+            </div>
+              <h2 id="overview">Overview</h2>
+          <p>Cryptography is the study and practice of techniques for securing communication and data from adversaries. Among the many cryptographic protocols in use today, the <strong>RSA algorithm</strong> stands as one of the most influential. It is a public-key cryptosystem grounded in number theory, particularly the concepts of <strong>modular arithmetic</strong>, <strong>prime numbers</strong>, and <strong>Euler’s Totient Function</strong>.</p>
+          <p>This module introduces the mathematical foundations of RSA encryption through a simplified but complete walkthrough. By the end, students will understand how modular arithmetic enables secure communication, and how it is applied to encrypt and decrypt messages using the RSA system.</p>
+          <hr>
+          <h2 id="1-modular-arithmetic">1. Modular Arithmetic</h2>
+          <p>Modular arithmetic is a system of arithmetic for integers where numbers "wrap around" after reaching a specified value called the modulus.</p>
+          <p>Formally, if two integers <code>a</code> and <code>b</code> satisfy:</p>
+          <pre><code>a ≡ b (mod n)
+          </code></pre>
+          <p>this means that <code>(a - b)</code> is divisible by <code>n</code>, or that <code>a</code> and <code>b</code> leave the same remainder when divided by <code>n</code>.</p>
+          <h3 id="examples">Examples</h3>
+          <ul>
+          <li><code>17 ≡ 5 (mod 12)</code>
+          Since 17 divided by 12 leaves a remainder of 5.</li>
+          <li><code>34 ≡ 10 (mod 12)</code>
+          Because 34 ÷ 12 = 2 remainder 10.</li>
+          <li><code>23 ≡ 3 (mod 10)</code>
+          As 23 and 3 both leave remainder 3 when divided by 10.</li>
+          </ul>
+          <p>This arithmetic behaves similarly to operations on a clock, where, for example, 14 hours after 10 o'clock brings us back to 12 o'clock:
+          <code>(10 + 14) ≡ 12 (mod 12)</code></p>
+          <hr>
+          <h2 id="2-prime-numbers-and-eulers-totient-function">2. Prime Numbers and Euler’s Totient Function</h2>
+          <h3 id="prime-numbers">Prime Numbers</h3>
+          <p>A <strong>prime number</strong> is an integer greater than 1 that has no positive divisors other than 1 and itself. Prime numbers are central to RSA because the security of the algorithm relies on the difficulty of factoring the product of two large primes.</p>
+          <h3 id="totient-function-φn">Totient Function φ(n)</h3>
+          <p>Euler’s Totient Function φ(n) counts the number of integers less than <code>n</code> that are <strong>coprime</strong> to <code>n</code> (i.e., share no common divisors with <code>n</code> other than 1).</p>
+          <p>If <code>n = p × q</code>, where <code>p</code> and <code>q</code> are distinct prime numbers, then:</p>
+          <pre><code>φ(n) = (p − 1) × (q − 1)
+          </code></pre>
+          <h3 id="example">Example</h3>
+          <p>Let <code>p = 5</code> and <code>q = 11</code>. Then:</p>
+          <ul>
+          <li><code>n = p × q = 55</code></li>
+          <li><code>φ(55) = (5 − 1) × (11 − 1) = 4 × 10 = 40</code></li>
+          </ul>
+          <p>This value is essential for constructing the private key in RSA.</p>
+          <hr>
+          <h2 id="3-key-generation-in-rsa">3. Key Generation in RSA</h2>
+          <p>RSA requires two keys: a <strong>public key</strong> for encryption and a <strong>private key</strong> for decryption.</p>
+          <h3 id="steps-to-generate-keys">Steps to Generate Keys</h3>
+          <ol>
+          <li><p><strong>Select two distinct prime numbers</strong>, <code>p</code> and <code>q</code>.</p>
+          </li>
+          <li><p><strong>Compute</strong> <code>n = p × q</code>.</p>
+          </li>
+          <li><p><strong>Compute Euler’s Totient Function</strong> <code>φ(n) = (p − 1) × (q − 1)</code>.</p>
+          </li>
+          <li><p><strong>Choose a public exponent</strong> <code>e</code> such that <code>1 &lt; e &lt; φ(n)</code> and <code>gcd(e, φ(n)) = 1</code>.</p>
+          </li>
+          <li><p><strong>Compute the modular inverse</strong> <code>d</code> of <code>e</code> modulo <code>φ(n)</code>, i.e., find <code>d</code> such that:</p>
+          <pre><code>(e × d) mod φ(n) = 1
+          </code></pre>
+          <p>This <code>d</code> is the private key exponent.</p>
+          </li>
+          </ol>
+          <p>The Extended Euclidean Algorithm is typically used to compute the modular inverse.</p>
+          <h3 id="example-1">Example</h3>
+          <p>Let <code>p = 5</code>, <code>q = 11</code></p>
+          <ul>
+          <li><code>n = 55</code></li>
+          <li><code>φ(n) = 40</code></li>
+          <li>Choose <code>e = 3</code> (since <code>gcd(3, 40) = 1</code>)</li>
+          <li>Find <code>d</code> such that <code>3 × d ≡ 1 (mod 40)</code>
+          Using the Extended Euclidean Algorithm: <code>d = 27</code></li>
+          </ul>
+          <p>Thus,</p>
+          <ul>
+          <li><strong>Public Key:</strong> <code>(n = 55, e = 3)</code></li>
+          <li><strong>Private Key:</strong> <code>(n = 55, d = 27)</code></li>
+          </ul>
+          <hr>
+          <h2 id="4-rsa-encryption-and-decryption">4. RSA Encryption and Decryption</h2>
+          <p>RSA uses <strong>modular exponentiation</strong> for both encryption and decryption.</p>
+          <h3 id="encryption">Encryption</h3>
+          <p>To encrypt a plaintext message <code>m</code> (where <code>m &lt; n</code>), compute:</p>
+          <pre><code>c = m^e mod n
+          </code></pre>
+          <h3 id="decryption">Decryption</h3>
+          <p>To decrypt the ciphertext <code>c</code>, compute:</p>
+          <pre><code>m = c^d mod n
+          </code></pre>
+          <h3 id="example-2">Example</h3>
+          <p>Using the previous keys:</p>
+          <ul>
+          <li><p>Encrypt message <code>m = 9</code>
+          <code>c = 9^3 mod 55 = 729 mod 55 = 14</code></p>
+          </li>
+          <li><p>Decrypt <code>c = 14</code>
+          <code>m = 14^27 mod 55 = 9</code> (Recovered original message)</p>
+          </li>
+          </ul>
+          <p>This confirms that the RSA system operates correctly when the parameters are chosen properly.</p>
+          <hr>
+          <h2 id="5-mathematical-justification">5. Mathematical Justification</h2>
+          <p>The security and correctness of RSA depend on properties of number theory.</p>
+          <p>If <code>e</code> and <code>d</code> are chosen such that:</p>
+          <pre><code>(e × d) ≡ 1 (mod φ(n))
+          </code></pre>
+          <p>then for any message <code>m</code> where <code>0 &lt; m &lt; n</code>, it holds that:</p>
+          <pre><code>(m^e)^d ≡ m (mod n)
+          </code></pre>
+          <p><strong>Why RSA works:</strong></p>
+          <p>When <code>gcd(m, n) = 1</code> (i.e., <code>m</code> is coprime to <code>n</code>), this follows from <strong>Euler's theorem</strong>, which states:</p>
+          <pre><code>m^φ(n) ≡ 1 (mod n)     if gcd(m, n) = 1
+          </code></pre>
+          <p>Since <code>e × d ≡ 1 (mod φ(n))</code>, we can write <code>e × d = 1 + k × φ(n)</code> for some integer <code>k</code>. Therefore:</p>
+          <pre><code>m^(e×d) = m^(1 + k×φ(n)) = m × (m^φ(n))^k ≡ m × 1^k ≡ m (mod n)
+          </code></pre>
+          <p><strong>Note:</strong> The coprimality condition <code>gcd(m, n) = 1</code> is not strictly required for RSA to work correctly. Even when <code>m</code> shares a factor with <code>n</code> (which is extremely rare for large primes), the Chinese Remainder Theorem ensures that decryption still recovers the original message. However, for the mathematical proof using Euler's theorem, we typically assume <code>gcd(m, n) = 1</code>.</p>
+          <hr>
+          <h2 id="6-security-considerations">6. Security Considerations</h2>
+          <p>RSA’s security is based on the computational difficulty of the <strong>integer factorization problem</strong>. While it is straightforward to compute <code>n = p × q</code>, the reverse — determining <code>p</code> and <code>q</code> from <code>n</code> — becomes infeasible when <code>p</code> and <code>q</code> are large (e.g., 1024 or 2048 bits).</p>
+          <p>Modern RSA implementations use key sizes of at least <strong>2048 bits</strong> to ensure resistance against known factoring attacks.</p>
+          <p>In this educational setup, small primes are used for transparency and manual computation, but these are not secure in practice.</p>
+          <hr>
+          <h2 id="7-additional-worked-examples">7. Additional Worked Examples</h2>
+          <h3 id="example-1-modular-congruence">Example 1: Modular Congruence</h3>
+          <p>Evaluate: <code>34 mod 12 = 10</code>
+          Therefore, <code>34 ≡ 10 (mod 12)</code></p>
+          <hr>
+          <h3 id="example-2-modular-inverse">Example 2: Modular Inverse</h3>
+          <p>Find <code>x</code> such that:</p>
+          <pre><code>7 × x ≡ 1 mod 26
+          </code></pre>
+          <p>Try values manually or use the Extended Euclidean Algorithm:</p>
+          <ul>
+          <li><code>7 × 15 = 105 ≡ 1 (mod 26)</code></li>
+          <li>Hence, the modular inverse of 7 modulo 26 is 15.</li>
+          </ul>
+          <hr>
+          <h3 id="example-3-full-rsa-example">Example 3: Full RSA Example</h3>
+          <p>Let:</p>
+          <ul>
+          <li><code>p = 7</code>, <code>q = 17</code></li>
+          <li><code>n = 7 × 17 = 119</code></li>
+          <li><code>φ(n) = (7 − 1)(17 − 1) = 96</code></li>
+          <li>Choose <code>e = 5</code> (coprime with 96)</li>
+          <li>Compute <code>d</code> such that <code>5 × d ≡ 1 mod 96</code> → <code>d = 77</code></li>
+          </ul>
+          <p>To encrypt <code>m = 42</code>:</p>
+          <ul>
+          <li><code>c = 42^5 mod 119 = 52</code></li>
+          </ul>
+          <p>To decrypt <code>c = 52</code>:</p>
+          <ul>
+          <li><code>m = 52^77 mod 119 = 42</code></li>
+          </ul>
+          <hr>
+          
+          </div>
+          <div class="bug-report-mobile">
+              <bug-report id="bug-report" title="[BUG REPORT] MODULAR ARITHMETIC AND APPLICATIONS" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;IIITH&quot;,&quot;expname&quot;:&quot;MODULAR ARITHMETIC AND APPLICATIONS&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" position="override" button_style="
+                          position: fixed; 
+                          bottom: 20px;
+                          right: 20px;
+                          z-index: 1;
+                          font-size: 0;
+                          padding: 25px;
+                          border-radius: 50%;
+                          border: none;
+                          background-color: #0fc0ff;
+                          background-image: url(data:image/png;base64,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);
+                          background-repeat: no-repeat;
+                          background-position: center;
+                          background-size: 30px;
+                          filter: invert(1);">
+              </bug-report>
+          </div>        </div>
+      </div>
+      <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+        <div class="row px-5 mx-0">
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+            <a href="https://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+            <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+            <a href="https://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+            <span> Phone: General Information: 011-26582050 </span>
+            <span> Email: support@vlabs.ac.in </span>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+            <div class="social-links">
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+      	  <i class="fab fa-twitter"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+      	  <i class="fab fa-facebook"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+      	  <i class="fab fa-youtube"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+      	  <i class="fab fa-linkedin"></i>
+      	</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+          <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+          &nbsp;&amp;&nbsp;
+          <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+        </div>
+      </footer>
+    <script src="./assets/js/toggleSidebar.js"></script>
+    <script src="./assets/js/event-handler.js"></script>
+
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
+  
+
+<script type="module" src="https://cdn.vlabs.ac.in/bug-report/vlabs-bug-report.js"></script><script type="module" src="/exp-modular-arithmetic-applications-iiith/plugins/svc-rating/index.js"></script><script type="module" src="/exp-modular-arithmetic-applications-iiith/plugins/svc-rating/config.js"></script><script type="module" src="https://apis.google.com/js/api.js"></script></body></html>

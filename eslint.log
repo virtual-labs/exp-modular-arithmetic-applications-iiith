@@ -1,0 +1,43 @@
+
+/home/runner/work/exp-modular-arithmetic-applications-iiith/exp-modular-arithmetic-applications-iiith/experiment/simulation/RSA.js
+   92:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  106:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  188:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  189:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  191:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  197:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  201:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  202:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  213:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  235:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  238:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  242:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  242:13  warning  'dOptions' is assigned a value but never used    no-unused-vars
+  295:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  296:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  317:15  warning  'steps' is assigned a value but never used       no-unused-vars
+  340:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  340:13  warning  'quizSteps' is assigned a value but never used   no-unused-vars
+  341:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  341:13  warning  'quizResult' is assigned a value but never used  no-unused-vars
+  341:69  warning  'quizBit' is assigned a value but never used     no-unused-vars
+  342:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  343:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  349:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  350:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  350:44  warning  'qExp' is assigned a value but never used        no-unused-vars
+  366:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  367:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  367:9   warning  Move function declaration to function body root  no-inner-declarations
+  395:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  395:9   warning  Move function declaration to function body root  no-inner-declarations
+  454:9   warning  Unexpected lexical declaration in case block     no-case-declarations
+  454:9   warning  Move function declaration to function body root  no-inner-declarations
+
+/home/runner/work/exp-modular-arithmetic-applications-iiith/exp-modular-arithmetic-applications-iiith/experiment/simulation/mobile-detection.js
+  393:7   warning  'mobileDetection' is assigned a value but never used  no-unused-vars
+  396:38  warning  'module' is not defined                               no-undef
+  397:3   warning  'module' is not defined                               no-undef
+
+✖ 36 problems (0 errors, 36 warnings)
+
