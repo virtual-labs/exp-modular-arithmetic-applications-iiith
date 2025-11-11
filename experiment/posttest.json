@@ -121,7 +121,7 @@
       "difficulty": "advanced"
     },
     {
-      "question": "In an RSA system with n = 77, e = 13, if the ciphertext is c = 23, what is the original message m?",
+      "question": "In an RSA system with n = 77, e = 13, if the ciphertext is c = 46, what is the original message m?",
       "answers": {
         "a": "9",
         "b": "12",
@@ -129,10 +129,10 @@
         "d": "18"
       },
       "explanations": {
-        "a": "This is incorrect based on the decryption calculation. Let me work through this step-by-step to find the correct answer.",
-        "b": "This is incorrect. The proper decryption calculation will give us a different result.",
-        "c": "This is incorrect. Let's verify by working through the complete decryption process.",
-        "d": "This is correct! First, find d: n = 77 = 7×11, so φ(n) = 6×10 = 60. We need d such that 13×d ≡ 1 (mod 60). Using the Extended Euclidean Algorithm: 13×37 = 481 = 8×60 + 1, so d = 37. To decrypt: m = c^d mod n = 23^37 mod 77. Using properties of modular exponentiation and the fact that this is a constructed example, m = 18. We can verify: 18^13 mod 77 should equal 23."
+        "a": "This is incorrect. Let's verify: if m = 9, then c = 9^13 mod 77 = 58, not 46.",
+        "b": "This is incorrect. Let's verify: if m = 12, then c = 12^13 mod 77 = 12, not 46.",
+        "c": "This is incorrect. Let's verify: if m = 15, then c = 15^13 mod 77 = 64, not 46.",
+        "d": "This is correct! First, find d: n = 77 = 7×11, so φ(n) = 6×10 = 60. We need d such that 13×d ≡ 1 (mod 60). Using the Extended Euclidean Algorithm: 13×37 = 481 = 8×60 + 1, so d = 37. To decrypt: m = c^d mod n = 46^37 mod 77 = 18. We can verify by encrypting: 18^13 mod 77 = 46."
       },
       "correctAnswer": "d",
       "difficulty": "advanced"
