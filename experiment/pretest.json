@@ -2,38 +2,157 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the result of 17 mod 5?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "5"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is correct! When we divide 17 by 5, we get 17 = 5 × 3 + 2, so the remainder (which is what 'mod' gives us) is 2. Think of it like a clock - if you start at 12 and count 17 hours on a 5-hour clock, you'd end up at position 2.",
+        "b": "This is incorrect. To find 17 mod 5, we need to find the remainder when 17 is divided by 5. 17 ÷ 5 = 3 remainder 2, not 3.",
+        "c": "This is incorrect. While 4 is close, 17 mod 5 = 2. Remember: 17 = 5 × 3 + 2, so the remainder is 2.",
+        "d": "This is incorrect. The result of a mod operation is always less than the modulus. Since we're doing mod 5, the result must be between 0 and 4."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following statements about prime numbers is TRUE?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "All prime numbers are odd",
+        "b": "A prime number has exactly two distinct positive divisors",
+        "c": "1 is considered a prime number",
+        "d": "Prime numbers can be factored into smaller integers"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is incorrect. While most primes are odd, the number 2 is prime and even. 2 is the only even prime number because all other even numbers are divisible by 2.",
+        "b": "This is correct! A prime number has exactly two distinct positive divisors: 1 and itself. For example, 7 is only divisible by 1 and 7, making it prime.",
+        "c": "This is incorrect. By modern mathematical convention, 1 is not considered prime because it only has one positive divisor (itself), not two.",
+        "d": "This is incorrect. Prime numbers cannot be factored into smaller positive integers (other than 1 and themselves). This inability to factor is what makes them 'prime' or fundamental."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "In RSA cryptography, what does the public key consist of?",
+      "answers": {
+        "a": "The values (d, n)",
+        "b": "The values (e, n)",
+        "c": "The values (p, q)",
+        "d": "The values (φ(n), e)"
+      },
+      "explanations": {
+        "a": "This is incorrect. The values (d, n) form the private key, not the public key. 'd' is the private exponent that must be kept secret.",
+        "b": "This is correct! The public key in RSA consists of (e, n) where 'e' is the public exponent and 'n' is the modulus (n = p × q). This key can be shared openly for encryption.",
+        "c": "This is incorrect. The prime factors p and q must be kept absolutely secret as they can be used to break the encryption. They are not part of any key pair.",
+        "d": "This is incorrect. φ(n) is Euler's totient function and must be kept secret as it's used to calculate the private key. It's not part of the public key."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If p = 7 and q = 11, what is the value of Euler's totient function φ(n) where n = p × q?",
+      "answers": {
+        "a": "60",
+        "b": "72",
+        "c": "77",
+        "d": "84"
+      },
+      "explanations": {
+        "a": "This is correct! First, n = p × q = 7 × 11 = 77. For distinct primes, φ(n) = (p-1) × (q-1) = (7-1) × (11-1) = 6 × 10 = 60. This represents the count of numbers less than 77 that are coprime to 77.",
+        "b": "This is incorrect. You may have calculated (p+1) × (q-1) = 8 × 9 = 72, but the correct formula is φ(n) = (p-1) × (q-1).",
+        "c": "This is incorrect. 77 is the value of n = p × q, not φ(n). Remember, φ(n) counts numbers coprime to n, which is always less than n for composite numbers.",
+        "d": "This is incorrect. You may have calculated p × (q+1) = 7 × 12 = 84, but the correct formula for φ(n) when n = p × q is (p-1) × (q-1)."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In RSA, if e = 5 and φ(n) = 24, what condition must the private exponent d satisfy?",
+      "answers": {
+        "a": "d × φ(n) ≡ 1 (mod e)",
+        "b": "e × d ≡ 1 (mod φ(n))",
+        "c": "d ≡ e (mod φ(n))",
+        "d": "e + d ≡ 1 (mod φ(n))"
+      },
+      "explanations": {
+        "a": "This is incorrect. The relationship is the other way around - we need e × d ≡ 1 (mod φ(n)), not d × φ(n) ≡ 1 (mod e).",
+        "b": "This is correct! The private exponent d must satisfy e × d ≡ 1 (mod φ(n)), meaning d is the modular multiplicative inverse of e modulo φ(n). In this case, 5 × d ≡ 1 (mod 24), so d = 5 (since 5 × 5 = 25 ≡ 1 (mod 24)).",
+        "c": "This is incorrect. d is not congruent to e modulo φ(n). Instead, d is the multiplicative inverse of e modulo φ(n).",
+        "d": "This is incorrect. The relationship involves multiplication, not addition. We need e × d ≡ 1 (mod φ(n)), not e + d ≡ 1 (mod φ(n))."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the result of 13^3 mod 7?",
+      "answers": {
+        "a": "6",
+        "b": "1",
+        "c": "3",
+        "d": "5"
+      },
+      "explanations": {
+        "a": "This is correct! We can solve this step by step: First, 13 ≡ 6 (mod 7) since 13 = 7×1 + 6. Then 13^3 ≡ 6^3 (mod 7). Now 6^3 = 216, and 216 = 7×30 + 6, so 216 ≡ 6 (mod 7). Alternatively, 6^2 = 36 ≡ 1 (mod 7), so 6^3 = 6^2 × 6 ≡ 1 × 6 ≡ 6 (mod 7).",
+        "b": "This is incorrect. While 6^2 ≡ 1 (mod 7), we have 6^3 = 6^2 × 6 ≡ 1 × 6 ≡ 6 (mod 7), not 1.",
+        "c": "This is incorrect. 13 ≡ 6 (mod 7), and 6^3 = 216 ≡ 6 (mod 7), not 3.",
+        "d": "This is incorrect. The calculation gives us 13^3 ≡ 6^3 ≡ 6 (mod 7), not 5."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Using the Extended Euclidean Algorithm, what is the modular multiplicative inverse of 17 modulo 26?",
+      "answers": {
+        "a": "23",
+        "b": "15",
+        "c": "21",
+        "d": "No inverse exists"
+      },
+      "explanations": {
+        "a": "This is correct! Using the Extended Euclidean Algorithm: gcd(17,26) = gcd(17,9) = gcd(8,9) = gcd(8,1) = 1. Working backwards: 1 = 9-1×8 = 9-1×(26-1×17) = 9-26+17 = (17-26+17)-26+17 = 3×17-2×26. So 17×3 ≡ 1 (mod 26), but we need positive: 3+26 = 29 ≡ 3 (mod 26). Wait, let me recalculate: 17×23 = 391 = 15×26 + 1, so 17×23 ≡ 1 (mod 26).",
+        "b": "This is incorrect. Let's verify: 17×15 = 255 = 9×26 + 21, so 17×15 ≡ 21 (mod 26), not 1.",
+        "c": "This is incorrect. Let's verify: 17×21 = 357 = 13×26 + 19, so 17×21 ≡ 19 (mod 26), not 1.",
+        "d": "This is incorrect. Since gcd(17,26) = 1, the inverse does exist. Two numbers have a multiplicative inverse modulo n if and only if they are coprime to n."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "In an RSA system with n = 35, e = 5, what is the correct decryption of the ciphertext c = 12?",
+      "answers": {
+        "a": "2",
+        "b": "17",
+        "c": "23",
+        "d": "Cannot determine without knowing d"
+      },
+      "explanations": {
+        "a": "This is incorrect. The calculation shows that 12^5 mod 35 = 17, not 2.",
+        "b": "This is correct! First, we need to find d. Since n = 35 = 5×7, φ(n) = 4×6 = 24. We need d such that 5×d ≡ 1 (mod 24). Since 5×5 = 25 ≡ 1 (mod 24), d = 5. To decrypt: m = c^d mod n = 12^5 mod 35. Calculating: 12^2 = 144 ≡ 4 (mod 35), 12^4 ≡ 16 (mod 35), 12^5 = 12^4 × 12 ≡ 16 × 12 = 192 ≡ 17 (mod 35). We can verify: 17^5 mod 35 = 12.",
+        "c": "This is incorrect. This value doesn't result from the proper decryption calculation.",
+        "d": "This is incorrect. We can determine d from the given information: since n = 35 = 5×7, φ(n) = 24, and with e = 5, we get d = 5."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Why is the security of RSA based on the difficulty of factoring large numbers?",
+      "answers": {
+        "a": "Because factoring determines the value of the public exponent e",
+        "b": "Because knowing p and q allows computation of φ(n) and thus the private key d",
+        "c": "Because factoring large numbers requires solving discrete logarithms",
+        "d": "Because the encryption process itself involves factoring"
+      },
+      "explanations": {
+        "a": "This is incorrect. The public exponent e is chosen independently and doesn't require factoring n. The value of e is typically a small number like 3, 17, or 65537.",
+        "b": "This is correct! If an attacker can factor n into p and q, they can compute φ(n) = (p-1)(q-1), and then find the private exponent d by computing the modular inverse of e modulo φ(n). This would completely break the RSA encryption. The security relies on the fact that factoring large numbers (hundreds of digits) is computationally infeasible with current technology.",
+        "c": "This is incorrect. While discrete logarithms are hard problems used in other cryptographic systems, RSA security is specifically based on the integer factorization problem, not discrete logarithms.",
+        "d": "This is incorrect. The encryption process involves modular exponentiation (m^e mod n), not factoring. Factoring becomes relevant only when trying to break the system."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
   ]
 }

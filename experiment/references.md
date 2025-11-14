@@ -1,1 +1,1 @@
-### Link your references in here
+1. Discrete Mathematics and Its Applications by Kenneth Rosen
